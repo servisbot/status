@@ -1,0 +1,42 @@
+name: Update status.json (backup status)
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # every 5 minutes (adjust as you like)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install (no dependencies required)
+        run: |
+          echo "No npm install required for this simple script."
+
+      - name: Run status check
+        run: |
+          node scripts/checkStatus.js
+
+      - name: Commit & push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add status.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-update status.json [skip ci]" || true
+            git push origin HEAD
+          else
+            echo "No changes to commit."
+          fi

@@ -1,0 +1,82 @@
+{
+  "status": "OPERATIONAL",
+  "timestamp": "2025-11-01T16:20:01.603Z",
+  "contact": "support@servisbot.com",
+  "affected_regions": [
+    {
+      "region_name": "us-1",
+      "services": [
+        {
+          "name": "tcp",
+          "status": "OK",
+          "checkUrl": "https://httpbin.org/status/200",
+          "lastChecked": "2025-11-01T16:20:00.380Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "checkUrl": "https://httpbin.org/status/200",
+          "lastChecked": "2025-11-01T16:20:00.549Z"
+        }
+      ]
+    },
+    {
+      "region_name": "eu-1",
+      "services": [
+        {
+          "name": "tcp",
+          "status": "OK",
+          "checkUrl": "https://httpbin.org/status/200",
+          "lastChecked": "2025-11-01T16:20:00.732Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "checkUrl": "https://httpbin.org/status/200",
+          "lastChecked": "2025-11-01T16:20:01.602Z"
+        }
+      ]
+    },
+    {
+      "region_name": "eu-2",
+      "services": [
+        {
+          "name": "tcp",
+          "status": "OK",
+          "lastChecked": "2025-11-01T16:20:01.602Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "lastChecked": "2025-11-01T16:20:01.602Z"
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "time": "2025-02-03T10:00:00Z",
+      "status": "We broke something"
+    },
+    {
+      "time": "2025-02-03T11:00:00Z",
+      "status": "We have identified the issue and are fixing it"
+    },
+    {
+      "time": "2025-10-31T15:26:03.901Z",
+      "status": "Overall status changed from OPERATIONAL to DOWN"
+    },
+    {
+      "time": "2025-10-31T16:09:03.901Z",
+      "status": "Overall status changed from DOWN to OPERATIONAL"
+    },
+    {
+      "time": "2025-11-01T15:59:13.945Z",
+      "status": "Overall status changed from OPERATIONAL to DOWN"
+    },
+    {
+      "time": "2025-11-01T16:20:01.603Z",
+      "status": "Overall status changed from DOWN to OPERATIONAL"
+    }
+  ]
+}
