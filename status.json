@@ -1,6 +1,6 @@
 {
   "status": "OPERATIONAL",
-  "timestamp": "2025-11-02T01:55:52.326Z",
+  "timestamp": "2025-11-02T02:39:58.154Z",
   "contact": "support@servisbot.com",
   "affected_regions": [
     {
@@ -10,13 +10,13 @@
           "name": "tcp",
           "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-02T01:55:49.855Z"
+          "lastChecked": "2025-11-02T02:39:55.389Z"
         },
         {
           "name": "core",
           "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-02T01:55:50.947Z"
+          "lastChecked": "2025-11-02T02:39:57.558Z"
         }
       ]
     },
@@ -27,13 +27,13 @@
           "name": "tcp",
           "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-02T01:55:51.381Z"
+          "lastChecked": "2025-11-02T02:39:57.864Z"
         },
         {
           "name": "core",
           "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-02T01:55:52.326Z"
+          "lastChecked": "2025-11-02T02:39:58.154Z"
         }
       ]
     },
@@ -43,12 +43,12 @@
         {
           "name": "tcp",
           "status": "OK",
-          "lastChecked": "2025-11-02T01:55:52.326Z"
+          "lastChecked": "2025-11-02T02:39:58.154Z"
         },
         {
           "name": "core",
           "status": "OK",
-          "lastChecked": "2025-11-02T01:55:52.326Z"
+          "lastChecked": "2025-11-02T02:39:58.154Z"
         }
       ]
     }
