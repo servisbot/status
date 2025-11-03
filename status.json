@@ -1,6 +1,6 @@
 {
-  "status": "OPERATIONAL",
-  "timestamp": "2025-11-03T06:59:55.278Z",
+  "status": "DOWN",
+  "timestamp": "2025-11-03T07:12:23.502Z",
   "contact": "support@servisbot.com",
   "affected_regions": [
     {
@@ -10,13 +10,13 @@
           "name": "tcp",
           "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T06:59:53.117Z"
+          "lastChecked": "2025-11-03T07:12:12.565Z"
         },
         {
           "name": "core",
-          "status": "OK",
+          "status": "DOWN",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T06:59:54.343Z"
+          "lastChecked": "2025-11-03T07:12:20.657Z"
         }
       ]
     },
@@ -27,13 +27,13 @@
           "name": "tcp",
           "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T06:59:54.581Z"
+          "lastChecked": "2025-11-03T07:12:22.460Z"
         },
         {
           "name": "core",
           "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T06:59:55.278Z"
+          "lastChecked": "2025-11-03T07:12:23.502Z"
         }
       ]
     },
@@ -43,12 +43,12 @@
         {
           "name": "tcp",
           "status": "OK",
-          "lastChecked": "2025-11-03T06:59:55.278Z"
+          "lastChecked": "2025-11-03T07:12:23.502Z"
         },
         {
           "name": "core",
           "status": "OK",
-          "lastChecked": "2025-11-03T06:59:55.278Z"
+          "lastChecked": "2025-11-03T07:12:23.502Z"
         }
       ]
     }
@@ -181,6 +181,10 @@
     {
       "time": "2025-11-03T06:59:55.278Z",
       "status": "Overall status changed from DOWN to OPERATIONAL"
+    },
+    {
+      "time": "2025-11-03T07:12:23.502Z",
+      "status": "Overall status changed from OPERATIONAL to DOWN"
     }
   ]
 }
