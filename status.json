@@ -1,6 +1,6 @@
 {
-  "status": "DOWN",
-  "timestamp": "2025-11-03T09:27:48.386Z",
+  "status": "OPERATIONAL",
+  "timestamp": "2025-11-03T09:41:00.395Z",
   "contact": "support@servisbot.com",
   "affected_regions": [
     {
@@ -8,15 +8,15 @@
       "services": [
         {
           "name": "tcp",
-          "status": "DOWN",
+          "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T09:27:47.971Z"
+          "lastChecked": "2025-11-03T09:40:50.695Z"
         },
         {
           "name": "core",
-          "status": "DOWN",
+          "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T09:27:48.129Z"
+          "lastChecked": "2025-11-03T09:40:53.746Z"
         }
       ]
     },
@@ -25,15 +25,15 @@
       "services": [
         {
           "name": "tcp",
-          "status": "DOWN",
+          "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T09:27:48.234Z"
+          "lastChecked": "2025-11-03T09:40:56.834Z"
         },
         {
           "name": "core",
-          "status": "DOWN",
+          "status": "OK",
           "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T09:27:48.386Z"
+          "lastChecked": "2025-11-03T09:41:00.395Z"
         }
       ]
     },
@@ -43,12 +43,12 @@
         {
           "name": "tcp",
           "status": "OK",
-          "lastChecked": "2025-11-03T09:27:48.386Z"
+          "lastChecked": "2025-11-03T09:41:00.395Z"
         },
         {
           "name": "core",
           "status": "OK",
-          "lastChecked": "2025-11-03T09:27:48.386Z"
+          "lastChecked": "2025-11-03T09:41:00.395Z"
         }
       ]
     }
@@ -209,6 +209,10 @@
     {
       "time": "2025-11-03T09:27:48.386Z",
       "status": "Overall status changed from OPERATIONAL to DOWN"
+    },
+    {
+      "time": "2025-11-03T09:41:00.395Z",
+      "status": "Overall status changed from DOWN to OPERATIONAL"
     }
   ]
 }
