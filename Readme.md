@@ -171,7 +171,9 @@ npx http-server -c-1 .
 ```json
 "status": "DOWN"
 
-3. ```bash
+3. Run checkStatus.js
+
+```bash
 node checkStatus.js
 
 ## 5. Deploying to GitHub Pages
