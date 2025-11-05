@@ -22,32 +22,63 @@ Example structure:
 ```json
 {
   "status": "OPERATIONAL",
-  "timestamp": "2025-10-31T14:00:00Z",
+  "timestamp": "2025-11-05T09:05:35.033Z",
   "contact": "support@servisbot.com",
   "affected_regions": [
     {
       "region_name": "us-1",
       "services": [
-        { "name": "tcp", "status": "OK" },
-        { "name": "core", "status": "DEGRADED" }
+        {
+          "name": "tcp",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.032Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        }
       ]
     },
     {
       "region_name": "eu-1",
       "services": [
-        { "name": "tcp", "status": "DOWN" },
-        { "name": "core", "status": "DEGRADED" }
+        {
+          "name": "tcp",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        }
+      ]
+    },
+    {
+      "region_name": "eu-2",
+      "services": [
+        {
+          "name": "tcp",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        }
       ]
     }
   ],
   "timeline": [
     {
-      "time": "2025-10-31T12:00:00Z",
-      "status": "Scheduled maintenance completed"
+      "time": "2025-11-03T22:40:38.327Z",
+      "status": "Overall status changed from OPERATIONAL to DOWN"
     },
     {
-      "time": "2025-10-31T10:00:00Z",
-      "status": "Partial outage detected in EU-1"
+      "time": "2025-11-05T09:05:35.033Z",
+      "status": "Overall status changed from DOWN to OPERATIONAL"
     }
   ]
 }
@@ -139,6 +170,9 @@ npx http-server -c-1 .
 
 ```json
 "status": "DOWN"
+
+3. ```bash
+node checkStatus.js
 
 ## 5. Deploying to GitHub Pages
 
