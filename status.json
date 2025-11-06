@@ -1,6 +1,6 @@
 {
   "status": "OPERATIONAL",
-  "timestamp": "2025-11-03T11:33:27.674Z",
+  "timestamp": "2025-11-05T09:05:35.033Z",
   "contact": "support@servisbot.com",
   "affected_regions": [
     {
@@ -9,14 +9,12 @@
         {
           "name": "tcp",
           "status": "OK",
-          "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T11:33:25.750Z"
+          "lastChecked": "2025-11-05T09:05:35.032Z"
         },
         {
           "name": "core",
           "status": "OK",
-          "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T11:33:26.291Z"
+          "lastChecked": "2025-11-05T09:05:35.033Z"
         }
       ]
     },
@@ -26,14 +24,12 @@
         {
           "name": "tcp",
           "status": "OK",
-          "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T11:33:26.648Z"
+          "lastChecked": "2025-11-05T09:05:35.033Z"
         },
         {
           "name": "core",
           "status": "OK",
-          "checkUrl": "https://httpbin.org/status/200",
-          "lastChecked": "2025-11-03T11:33:27.674Z"
+          "lastChecked": "2025-11-05T09:05:35.033Z"
         }
       ]
     },
@@ -43,39 +39,23 @@
         {
           "name": "tcp",
           "status": "OK",
-          "lastChecked": "2025-11-03T11:33:27.674Z"
+          "lastChecked": "2025-11-05T09:05:35.033Z"
         },
         {
           "name": "core",
           "status": "OK",
-          "lastChecked": "2025-11-03T11:33:27.674Z"
+          "lastChecked": "2025-11-05T09:05:35.033Z"
         }
       ]
     }
   ],
   "timeline": [
     {
-      "time": "2025-02-03T10:00:00Z",
-      "status": "We broke something"
-    },
-    {
-      "time": "2025-02-03T11:00:00Z",
-      "status": "We have identified the issue and are fixing it"
-    },
-    {
-      "time": "2025-10-31T15:26:03.901Z",
+      "time": "2025-11-03T22:40:38.327Z",
       "status": "Overall status changed from OPERATIONAL to DOWN"
     },
     {
-      "time": "2025-10-31T16:09:03.901Z",
-      "status": "Overall status changed from DOWN to OPERATIONAL"
-    },
-    {
-      "time": "2025-11-01T15:59:13.945Z",
-      "status": "Overall status changed from OPERATIONAL to DOWN"
-    },
-    {
-      "time": "2025-11-01T16:20:01.603Z",
+      "time": "2025-11-05T09:05:35.033Z",
       "status": "Overall status changed from DOWN to OPERATIONAL"
     },
     {

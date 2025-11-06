@@ -22,32 +22,63 @@ Example structure:
 ```json
 {
   "status": "OPERATIONAL",
-  "timestamp": "2025-10-31T14:00:00Z",
+  "timestamp": "2025-11-05T09:05:35.033Z",
   "contact": "support@servisbot.com",
   "affected_regions": [
     {
       "region_name": "us-1",
       "services": [
-        { "name": "tcp", "status": "OK" },
-        { "name": "core", "status": "DEGRADED" }
+        {
+          "name": "tcp",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.032Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        }
       ]
     },
     {
       "region_name": "eu-1",
       "services": [
-        { "name": "tcp", "status": "DOWN" },
-        { "name": "core", "status": "DEGRADED" }
+        {
+          "name": "tcp",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        }
+      ]
+    },
+    {
+      "region_name": "eu-2",
+      "services": [
+        {
+          "name": "tcp",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        },
+        {
+          "name": "core",
+          "status": "OK",
+          "lastChecked": "2025-11-05T09:05:35.033Z"
+        }
       ]
     }
   ],
   "timeline": [
     {
-      "time": "2025-10-31T12:00:00Z",
-      "status": "Scheduled maintenance completed"
+      "time": "2025-11-03T22:40:38.327Z",
+      "status": "Overall status changed from OPERATIONAL to DOWN"
     },
     {
-      "time": "2025-10-31T10:00:00Z",
-      "status": "Partial outage detected in EU-1"
+      "time": "2025-11-05T09:05:35.033Z",
+      "status": "Overall status changed from DOWN to OPERATIONAL"
     }
   ]
 }
@@ -56,12 +87,11 @@ Example structure:
 
 ## Notes
 
-- **status** → overall company status (`OPERATIONAL`, `DEGRADED`, `DOWN`)  
-- **affected_regions** → each region and its services  
-- **timeline** → recent events  
-- **contact** → support email shown on the page  
+**status** → overall company status (`OPERATIONAL`, `DEGRADED`, `DOWN`)  
+**affected_regions** → each region and its services  
+**timeline** → recent events  
+**contact** → support email shown on the page  
 
----
 
 ## 2. Understanding per-region and overall status
 
@@ -83,7 +113,7 @@ Example per-region view:
 | eu-1   | DOWN | DEGRADED |
 | eu-2   | OK  | OK |
 
----
+
 
 ### Region-level status
 
@@ -101,7 +131,7 @@ Example:
 | eu-1   | DOWN           |
 | eu-2   | OK             |
 
----
+
 
 ### Overall headline (page banner)
 
@@ -118,7 +148,7 @@ Using the example above, the headline will display:
 
 because `eu-1 tcp` is DOWN.
 
----
+
 
 ## 3. Viewing the page locally
 
@@ -135,10 +165,15 @@ npx http-server -c-1 .
 
 2. Update fields as needed:
 
-- **Overall status**:
+**Overall status**:
 
 ```json
 "status": "DOWN"
+
+3. Run checkStatus.js
+
+```bash
+node checkStatus.js
 
 ## 5. Deploying to GitHub Pages
 
