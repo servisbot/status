@@ -87,12 +87,11 @@ Example structure:
 
 ## Notes
 
-- **status** → overall company status (`OPERATIONAL`, `DEGRADED`, `DOWN`)  
-- **affected_regions** → each region and its services  
-- **timeline** → recent events  
-- **contact** → support email shown on the page  
+**status** → overall company status (`OPERATIONAL`, `DEGRADED`, `DOWN`)  
+**affected_regions** → each region and its services  
+**timeline** → recent events  
+**contact** → support email shown on the page  
 
----
 
 ## 2. Understanding per-region and overall status
 
@@ -114,7 +113,7 @@ Example per-region view:
 | eu-1   | DOWN | DEGRADED |
 | eu-2   | OK  | OK |
 
----
+
 
 ### Region-level status
 
@@ -132,7 +131,7 @@ Example:
 | eu-1   | DOWN           |
 | eu-2   | OK             |
 
----
+
 
 ### Overall headline (page banner)
 
@@ -149,7 +148,7 @@ Using the example above, the headline will display:
 
 because `eu-1 tcp` is DOWN.
 
----
+
 
 ## 3. Viewing the page locally
 
@@ -166,7 +165,7 @@ npx http-server -c-1 .
 
 2. Update fields as needed:
 
-- **Overall status**:
+**Overall status**:
 
 ```json
 "status": "DOWN"
